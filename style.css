@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(168, 85, 247, 0.06),
+      transparent 40%
+    );
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+  }
+
+  .project-card:hover::before {
+    opacity: 1;
+  }
+
+  .tech-pill {
+    @apply text-[10px] md:text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg border border-purple-500/20 text-purple-200 bg-purple-500/10 backdrop-blur-sm transition-colors duration-300;
+  }
+
+  .project-card:hover .tech-pill {
+    @apply border-purple-500/40 bg-purple-500/20 text-purple-100;
+  }
+
+  .btn-primary {
+    @apply flex items-center justify-center py-2.5 px-4 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white text-sm font-semibold shadow-lg shadow-purple-900/50 transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply flex items-center justify-center py-2.5 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-gray-300 hover:text-white text-sm font-semibold transition-all duration-300;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0510;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a2574;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b33a8;
+}

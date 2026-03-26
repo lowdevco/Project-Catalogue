@@ -1,45 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CALCULATOR</title>
-    <link rel="stylesheet" href="../Calculator/assets/css/calcstyle.css">
-</head>
+    <link rel="stylesheet" href="../Calculator/assets/css/calcstyle.css" />
+  </head>
 
-<body>
+  <body>
     <div id="calculator-body">
-        <div id="calculator">
-            <div class="display-outline">
-                <input type="text" id="display" readonly>
-            </div>
-            <div id="keys">
-                <button class="function-btn" onclick="showOnDisplay(' + ')"> + </button>
-                <button onclick="showOnDisplay('7')"> 7 </button>
-                <button onclick="showOnDisplay('8')"> 8 </button>
-                <button onclick="showOnDisplay('9')"> 9 </button>
-                <button class="function-btn" onclick="showOnDisplay(' - ')"> - </button>
-                <button onclick="showOnDisplay('4')"> 4 </button>
-                <button onclick="showOnDisplay('5')"> 5 </button>
-                <button onclick="showOnDisplay('6')"> 6 </button>
-                <button class="function-btn" onclick="showOnDisplay(' * ')"> * </button>
-                <button onclick="showOnDisplay('1')"> 1 </button>
-                <button onclick="showOnDisplay('2')"> 2 </button>
-                <button onclick="showOnDisplay('3')"> 3 </button>
-                <button class="function-btn" onclick="showOnDisplay(' / ')"> / </button>
-                <button onclick="showOnDisplay('0')"> 0 </button>
-                <button onclick="showOnDisplay('.')"> . </button>
-                <button onclick="calculate()"> = </button>
-                <button class="function-btn" onclick="clearDisplay()" id="clear-btn"> C </button>
-            </div>
-            <div class="brand" disabled >
-                <h1>Calculator</h1>
-            </div>
+      <div id="calculator">
+        <div class="display-outline">
+          <input type="text" id="display" readonly />
         </div>
+        <div id="keys">
+          <button class="function-btn" onclick="showOnDisplay(' + ')">+</button>
+          <button onclick="showOnDisplay('7')">7</button>
+          <button onclick="showOnDisplay('8')">8</button>
+          <button onclick="showOnDisplay('9')">9</button>
+          <button class="function-btn" onclick="showOnDisplay(' - ')">-</button>
+          <button onclick="showOnDisplay('4')">4</button>
+          <button onclick="showOnDisplay('5')">5</button>
+          <button onclick="showOnDisplay('6')">6</button>
+          <button class="function-btn" onclick="showOnDisplay(' * ')">*</button>
+          <button onclick="showOnDisplay('1')">1</button>
+          <button onclick="showOnDisplay('2')">2</button>
+          <button onclick="showOnDisplay('3')">3</button>
+          <button class="function-btn" onclick="showOnDisplay(' / ')">/</button>
+          <button onclick="showOnDisplay('0')">0</button>
+          <button onclick="showOnDisplay('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button class="function-btn" onclick="clearDisplay()" id="clear-btn">
+            C
+          </button>
+        </div>
+        <div class="brand" disabled>
+          <h1>Calculator</h1>
+        </div>
+      </div>
     </div>
 
     <script src="../Calculator/assets/java-script/calcscript.js"></script>
-</body>
-
+  </body>
 </html>
